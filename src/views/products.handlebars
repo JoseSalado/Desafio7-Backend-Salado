@@ -1,0 +1,12 @@
+<h1>Productos</h1>
+<h2>Hola {{products.user.name}} {{products.user.lastname}}</h2>
+
+{{#each products.docs}}
+    {{this}}
+    <hr>    
+{{/each}}
+
+<hr>
+<a href="{{products.prevPage}}">Prev Page</a>
+<p>{{products.page}}</p>
+<a href="{{products.nextPage}}">Next Page</a>
